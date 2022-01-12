@@ -1,0 +1,13 @@
+<!-- M, m, L, l, H, h, V, v, Z, z -->
+
+<svg
+  version="1.1"
+  width="200"
+  height="200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M 10 10 h 80 v 80 h -80 v -80 m 90 0 H 180 V 90 H 100 V 10" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 10 100 h 80 v 80 h -80 z" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 100 100 L 180 100 l 0 80 L 100 180 L 100 100" stroke="black" stroke-width="1.5" fill="none" />
+
+</svg>
