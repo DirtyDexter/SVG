@@ -1,0 +1,31 @@
+ <!-- C, c, S, s, Q, q, T, t, A, a -->
+
+  <!-- A rx ry x-axis-rotation large-arc-flag sweep-flag x y
+ a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy -->
+
+
+<svg
+  version="1.1"
+  viewBox="0 0 1100 300"
+  width="1100"
+  height="300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M 10 10 C 10 20 40 20 40 10" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 50 10 c 10 10 20 10 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 110 10 c -20 10 50 10 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 10 30 c 0 20 30 20 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 50 30 c 10 20 20 20 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 110 30 c -20 20 50 20 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 10 60 c 0 30 30 30 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 50 60 c 10 30 20 30 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 110 60 c -20 30 50 30 30 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 10 150 C 30 100 40 100 60 150 s 30 50 50 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 210 80 Q 300 10 390 80" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 210 150 q 50 -50 100 0 t 100 0" stroke="black" stroke-width="1.5" fill="none"/>
+  <path d="M 510 290 L 610 190 a 30 50 0 0 1 50 -50 L 670 130 A 30 50 -45 0 1 720 80 L 790 10" stroke="black" stroke-width="1.5" fill="green"/>
+  <path d="M 875 75 A 45 45 0 0 0 920 120 L 920 75 Z" stroke="black" stroke-width="1.5" fill="green"/>
+  <path d="M 1025 75 A 45 45 0 1 0 1070 120 L 1070 75 Z" stroke="black" stroke-width="1.5" fill="red"/>
+  <path d="M 875 225 a 45 45 0 0 1 45 45 l 0 -45 Z" stroke="black" stroke-width="1.5" fill="purple"/>
+  <path d="M 1000 225 a 45 45 0 1 1 45 45 l 0 -45 Z" stroke="black" stroke-width="1.5" fill="blue"/>
+</svg>
