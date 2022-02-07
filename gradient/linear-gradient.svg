@@ -1,0 +1,28 @@
+<svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="Gradient1">
+      <stop class="stop1" offset="0%"/>
+      <stop class="stop2" offset="25%"/>
+      <stop class="stop3" offset="50%"/>
+      <stop class="stop4" offset="75%"/>
+      <stop class="stop5" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1" xlink:href="#Gradient1"/>
+    <style type="text/css">
+      <![CDATA[
+        :root {
+          --red-color: red;
+        }
+        #rect1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: var(--red-color); }
+        .stop2 { stop-color: violet; stop-opacity: 0.75 }
+        .stop3 { stop-color: blue; stop-opacity: 0.5 }
+        .stop4 { stop-color: black; stop-opacity: 0.5 }
+        .stop5 { stop-color: green; stop-opacity: 0.75 }
+      ]]>
+    </style>
+  </defs>
+  <rect id="rect1" x="10" y="10" rx="15" ry="15" width="100" height="100"/>
+  <rect x="160" y="10" rx="15" ry="15" width="100" height="100" fill="url(#Gradient2)"/>
+  <rect x="310" y="10" rx="15" ry="15" width="100" height="100" stroke="url(#Gradient1)" fill="none"/>
+</svg>
