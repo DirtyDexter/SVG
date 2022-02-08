@@ -1,0 +1,52 @@
+<svg width="1000" height="1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop offset="5%" stop-color="white"/>
+      <stop offset="95%" stop-color="blue"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stop-color="red"/>
+      <stop offset="95%" stop-color="orange"/>
+    </linearGradient>
+    <!-- patternUnits is "objectBoundingBox" and patternContentUnits is "userSpaceOnUse" -->
+    <pattern id="pattern1" x="0" y="0" width="0.25" height="0.25">
+      <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
+      <rect x="0" y="0" width="25" height="25" fill="url(#gradient2)"/>
+      <circle cx="25" cy="25" r="20" fill="url(#gradient1)" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- patternUnits is "objectBoundingBox" and patternContentUnits is "objectBoundingBox" -->
+    <pattern id="pattern2" x="0" y="0" width="0.25" height="0.25" patternContentUnits="objectBoundingBox">
+      <rect x="0" y="0" width="0.25" height="0.25" fill="skyblue"/>
+      <rect x="0" y="0" width="0.125" height="0.125" fill="url(#gradient2)"/>
+      <circle cx="0.125" cy="0.125" r="0.1" fill="url(#gradient1)" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- patternUnits is "userSpaceOnUse" and patternContentUnits is "userSpaceOnUse" -->
+    <pattern id="pattern3" x="430" y="10" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
+      <rect x="0" y="0" width="25" height="25" fill="url(#gradient2)"/>
+      <circle cx="25" cy="25" r="20" fill="url(#gradient1)" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- patternUnits is "userSpaceOnUse" and patternContentUnits is "objectBoundingBox" -->
+    <pattern id="pattern4" x="640" y="10" width="50" height="50" patternUnits="userSpaceOnUse" patternContentUnits="objectBoundingBox">
+      <rect x="0" y="0" width="0.25" height="0.25" fill="skyblue"/>
+      <rect x="0" y="0" width="0.125" height="0.125" fill="url(#gradient2)"/>
+      <circle cx="0.125" cy="0.125" r="0.1" fill="url(#gradient1)" fill-opacity="0.5"/>
+    </pattern>
+
+    <pattern id="pattern5" x="430" y="220" xlink:href="#pattern3" />
+    <pattern id="pattern6" x="640" y="220" xlink:href="#pattern4" />
+  </defs>
+
+  <rect x="10" y="10" width="200" height="200" stroke="black" fill="url(#pattern1)"/>
+  <rect x="220" y="10" width="200" height="200" stroke="black" fill="url(#pattern2)"/>
+  <rect x="430" y="10" width="200" height="200" stroke="black" fill="url(#pattern3)"/>
+  <rect x="640" y="10" width="200" height="200" stroke="black" fill="url(#pattern4)"/>
+
+  <rect x="10" y="220" width="200" height="300" stroke="black" fill="url(#pattern1)"/>
+  <rect x="220" y="220" width="200" height="300" stroke="black" fill="url(#pattern2)"/>
+  <rect x="430" y="220" width="200" height="300" stroke="black" fill="url(#pattern5)"/>
+  <rect x="640" y="220" width="200" height="300" stroke="black" fill="url(#pattern6)"/>
+</svg>
