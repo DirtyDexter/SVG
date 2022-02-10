@@ -1,0 +1,26 @@
+<svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text x="100" y="50" text-anchor="start">Hello World!!</text>
+  <text x="100" y="70" text-anchor="middle">Hello World!!</text>
+  <text x="100" y="90" text-anchor="end">Hello World!!</text>
+
+  <path d="M 200 50 L 250 50 M 200 80 L 250 80 M 200 110 L 250 110" stroke="black"/>
+  <text x="210" y="50" dominant-baseline="auto">
+    Hello
+    <tspan x="300,350,400" font-size="50px">World!!</tspan>
+  </text>
+  <text x="210" y="80" dominant-baseline="middle">
+    Hello
+    <tspan dx="90,50,50" fill="red" font-size="50px" text-decoration="underline">World!!</tspan>
+  </text>
+  <text x="210" y="110" dominant-baseline="hanging">
+    Hello
+    <tspan dy="30,40,50" rotate="180,180,180,90,180" font-weight="bold" font-size="20px">World!!</tspan>
+  </text>
+
+  <path id="path1" d="M 50 300 C 100 400 150 380 200 300" fill="transparent" stroke="grey"/>
+  <text dominant-baseline="hanging" font-size="30px">
+    <textPath xlink:href="#path1">
+      A hanging text.
+    </textPath>
+  </text>
+</svg>
