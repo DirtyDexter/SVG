@@ -1,0 +1,11 @@
+<!-- Much like the img element in HTML SVG has an image element to serve the same purpose.
+You can use it to embed arbitrary raster (and vector) images.
+The specification requests applications to support at least PNG, JPEG and SVG format files.
+
+The embedded picture becomes a normal SVG element.
+This means, that you can use clips, masks, filters, rotations and all other tools of SVG on the content: -->
+
+<svg viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <image x="90" y="-65" width="128" height="146" transform="rotate(45)"
+    xlink:href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image/mdn_logo_only_color.png"/>
+</svg>
